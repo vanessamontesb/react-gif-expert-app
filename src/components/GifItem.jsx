@@ -1,5 +1,6 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Card = styled.section`
@@ -41,3 +42,7 @@ export const GifItem = ({ title, url}) => {
   )
 }
 
+GifItem.protoTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+}
